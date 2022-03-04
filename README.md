@@ -49,3 +49,49 @@ sudo apt-get install pgbouncer
 
 
 https://www.pgbouncer.org/usage.html
+
+
+<h2>what is Pgpool-II?</h2>
+Pgpool-II is a middleware that works between PostgreSQL servers and a PostgreSQL database client.
+
+[Pgpool Wiki][6]
+
+[6]:https://pgpool.net/mediawiki/index.php/Main_Page/ "Pgpool Wiki"
+
+* <h3>Installation:</h3>
+ ```
+ sudo apt-get update
+ sudo apt-get install pgpool2
+ ```
+* Configuration:
+ ```
+ cd /etc/pgpool2/
+ ```
+ change the access permissions to edit configuration file or login as a user. (prefered to login as a user)
+ ```
+ chmod 666 pgpool.conf
+ code pgpool.conf
+ code pcp.conf
+ code pool_hba.conf
+ ```
+ * ### [Pgpool configuration tutorial][7]
+
+ [7]:https://www.pgpool.net/docs/42/en/html/example-configs.html "Pgpool configuration tutorial"
+
+* ### [Pgpool tutorial][8]
+
+ [8]:https://www.pgpool.net/docs/pgpool-II-3.0/tutorial-en.html "Pgpool tutorial"
+
+* ### [Pgpool documentation][9]
+
+ [9]:https://www.pgpool.net/docs/42/en/html/index.html "Pgpool documentation"
+
+ * <h2>Pgpool on K8s</h2>
+ 
+ >> https://www.pgpool.net/docs/42/en/html/example-kubernetes.html
+
+ >> https://github.com/pgpool/pgpool2_on_k8s
+
+
+
+
